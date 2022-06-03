@@ -1,3 +1,7 @@
+"""
+Refer to OpenAI Baselines code's environment setting
+https://github.com/marlbenchmark/on-policy
+"""
 from env.olympics_running import OlympicsRunning
 from gym.spaces import Box,Discrete
 from typing import List

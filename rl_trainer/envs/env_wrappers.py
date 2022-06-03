@@ -1,5 +1,6 @@
 """
 Modified from OpenAI Baselines code to work with multi-agent envs
+https://github.com/marlbenchmark/on-policy
 """
 import numpy as np
 import torch

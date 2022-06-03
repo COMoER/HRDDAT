@@ -1,9 +1,8 @@
 ## Heuristic Reward Driven Athlete Trainer
-
-Modified from [https://github.com/sjtu-marl/Competition_Olympics-Running](https://github.com/sjtu-marl/Competition_Olympics-Running).
-- add evaluate_local script to accept submission.py evaluation
-- HRDDAT model train script added (main_parallel_curiosity.py)
-
+> Use parallel framework and curiosity driven reward to train a running athlete
+### Our method demo
+**Curiosity Athlete(agent0,ours)** Compete with jidi baseline(agent1)
+![](assets/demo.gif)
 ### Usage
 - install
 
@@ -41,3 +40,11 @@ python evaluation_local.py --my_ai ppo_curiosity  --opponent rl --shuffle_map
 # evaluate the baseline model(trained by main.py) with random opponent
 python evaluation_local.py --my_ai ppo --opponent random --shuffle_map
 ```
+### Acknowledgement
+Modified from [https://github.com/sjtu-marl/Competition_Olympics-Running](https://github.com/sjtu-marl/Competition_Olympics-Running).
+- add evaluate_local script to accept submission.py evaluation
+- HRDDAT model train script added (main_parallel_curiosity.py)
+
+The profile function(`rl_trainer/algo/prof.py`) is from https://github.com/facebookresearch/torchbeast
+
+The parallel framework refers to https://github.com/marlbenchmark/on-policy
