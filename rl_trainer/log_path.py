@@ -28,6 +28,6 @@ def make_logpath(game_name, algo):
 
 
 def save_config(args, save_path):
-    file = open(os.path.join(str(save_path), "../submit_agent/ppo_curiosity/config.yaml"), mode="w", encoding="utf-8")
+    file = open(os.path.join(str(save_path), "config.yaml"), mode="w", encoding="utf-8")
     yaml.dump(vars(args), file)
     file.close()
