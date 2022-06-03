@@ -6,13 +6,13 @@
 
 ### Our group
 
-Yu Zheng (519030910354) for the parallel framework.
+Yu Zheng (519030910354) [@COMoER](https://github.com/COMoER)  for the parallel framework.
 
-Jiahang Cao (519030910347) for the astar costmap and trace potential reward.
+Jiahang Cao (519030910347)[@TopsailCBD](https://github.com/TopsailCBD) for the astar costmap and trace potential reward.
 
-Qingquan Bao (519030910402) for the curiosity inner reawrd and self-play settings.
+Qingquan Bao (519030910402)[@QingquanBao](https://github.com/QingquanBao) for the curiosity inner reawrd and self-play settings.
 
-The expriment report is equally contributed by the three authors.
+The experiment report is equally contributed by the three authors.
 
 ### Our method demo
 
