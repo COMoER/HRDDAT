@@ -23,6 +23,16 @@ python rl_trainer/main_parallel_curiosity.py --device cpu --reward_norm --data_n
 ```
 
 - evaluation
+
+You should change the rundir and episode to evaluate in the `submit_agent/{YOUR_AGENT_NAME}/submission.py`
+```python
+####################
+run = 1 # choose which run package to evaluate
+episode = 296 # choose which episode check point to evaluate
+####################
+```
+
+To evaluate locally, add `--render` to play the UI meanwhile
 ```shell
 # evaluate the model with random opponent
 python evaluation_local.py --my_ai ppo_curiosity --opponent random --shuffle_map
