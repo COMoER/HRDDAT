@@ -1,9 +1,20 @@
 ## Heuristic Reward Driven Athlete Trainer
 > Use parallel framework and curiosity driven reward to train a running athlete
+### Our method pipeline
+
+![structure](assets/structure.jpg)
+
 ### Our method demo
-**Curiosity Athlete(agent0,ours)** Compete with jidi baseline(agent1)
-![](assets/demo.gif)
+
+**Curiosity Athlete(agent0,ours)** compete with random(agent1)
+<img src="assets/demo.gif" style="zoom: 67%;" />
+
+**Curiosity Athlete(agent0,ours)** compete with jidi baseline agent trained in map4 (agent1)
+
+<img src="assets/demo2.gif" style="zoom: 67%;" />
+
 ### Usage
+
 - install
 
 ```shell
@@ -18,7 +29,7 @@ python rl_trainer/main.py --device cuda --map 1
 # training baseline with shuffle map
 python rl_trainer/main.py --device cuda --shuffle_map
 # training HRDDAT best model (we trained on the 64 cpu server)
-python rl_trainer/main_parallel_curiosity.py --device cuda --reward_norm --data_norm --advt_norm --curiosity --num_rollouts 36 --max_length 500 --shuffle_map --ext_ratio 0.2 --curiosity_ratio 0.8
+python rl_trainer/main_parallel_curiosity.py --device cuda --reward_norm --data_norm --advt_norm --curiosity --num_rollouts 36 --max_length 500 --shuffle_map --ext_ratio 0.1 --curiosity_ratio 0.9
 ```
 
 - evaluation
