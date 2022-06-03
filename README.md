@@ -5,9 +5,13 @@
 ![structure](assets/structure.jpg)
 
 ### Our group
+
 Yu Zheng (519030910354) for the parallel framework.
+
 Jiahang Cao (519030910347) for the astar costmap and trace potential reward.
+
 Qingquan Bao (519030910402) for the curiosity inner reawrd and self-play settings.
+
 The expriment report is equally contributed by the three authors.
 
 ### Our method demo
